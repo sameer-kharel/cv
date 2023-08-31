@@ -1,0 +1,680 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+s img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  nav ul li {
+    margin: 5px 10px;
+  }
+}
+
+.content {
+  height: 2000px;
+  background-color: #b01a1a;
+}
+
+.transparent-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: 999;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  color: rgb(210, 213, 220);
+  background-color: rgba(0, 0, 0, 0.0001); /* Black w/opacity/see-through */
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+.image-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s;
+}
+
+.text-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.text-section.reveal {
+  opacity: 1;
+}
+/* social media buttons tyo icon wala */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #333;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #333;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #333;
+  color: white;
+}
+
+.fa-youtube {
+  background: #333;
+  color: white;
+}
+
+.fa-instagram {
+  background: #333;
+  color: white;
+}
+/* for the image section and hire me button */
+.hero-image {
+  position: relative;
+  height: 800px;
+  background-image: url("pexels-mo-eid-8347500.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-text button {
+    font-size: 14px;
+  }
+}
+*/ .hero-image {
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+.hero-text button a {
+  color: black;
+  text-decoration: none;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* for the about me section */
+
+.about {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.section-detail-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  max-width: 60%;
+}
+
+.section-text {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.section-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* css for the work sectio */
+
+.section1 {
+  background-color: #000000;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-detail-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.project {
+  width: 100%;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.4s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.section-heading1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-text1 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section-detail-wrapper1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* skills ko css  */
+
+.skills-section {
+  margin-top: 0px;
+  background-color: #000000;
+  padding: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skill {
+  width: calc(33.33% - 20px);
+  margin: 20px;
+  padding: 30px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.skill p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .skill {
+    width: 100%;
+  }
+}
+
+/*for get in touch section */
+
+.touch {
+  background-color: rgb(22, 23, 23);
+  color: white;
+  padding: 50px;
+  text-align: left;
+}
+
+.touch h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  margin-right: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .touch,
+  footer {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* for the skill section */
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #000000;
+  padding: 10px 0;
+}
+
+/* Section styles */
+section {
+  padding: 80px 0;
+}
+
+/* Skills section styles */
+.skills-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Section styles */
+section {
+  padding: 80px 0;
+}
+
+/* Skills section styles */
+.skills-section {
+  background-color: #000000;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.skill {
+  background-color: #121111;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.skill p {
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; /* Background color changed to black */
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Section styles */
+section {
+  padding: 80px 0;
+}
+
+/* Skills section styles */
+.skills-section {
+  text-align: center;
+  background-color: #222; /* Darker background color */
+  padding: 80px 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list li {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ccc; /* Lighter color for better contrast */
+  opacity: 1; /* Set opacity to 1 for visible text */
+  transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+.skills-list li:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
