@@ -87,13 +87,13 @@ nav ul li a:hover {
   color: #ffffff;
 }
 
-.image-section {
+.image- {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-.image-section img {
+.image- img {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,7 +103,7 @@ nav ul li a:hover {
   transition: opacity 0.5s;
 }
 
-.text-section {
+.text- {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,7 +113,7 @@ nav ul li a:hover {
   transition: opacity 0.5s;
 }
 
-.text-section.reveal {
+.text-.reveal {
   opacity: 1;
 }
 /* social media buttons tyo icon wala */
@@ -160,7 +160,7 @@ nav ul li a:hover {
   background: #333;
   color: white;
 }
-/* for the image section and hire me button */
+/* for the image  and hire me button */
 .hero-image {
   position: relative;
   height: 800px;
@@ -277,7 +277,7 @@ nav ul li a:hover {
   color: white;
 }
 
-/* for the about me section */
+/* for the about me  */
 
 .about {
   background-color: black;
@@ -294,7 +294,7 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
-.section-detail-wrapper1 {
+.-detail-wrapper1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,12 +303,13 @@ nav ul li a:hover {
   max-width: 60%;
 }
 
-.section-text {
+
+.-text {
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-.section-image {
+.-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -316,7 +317,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-.section-content {
+.-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -324,13 +325,13 @@ nav ul li a:hover {
 
 /* css for the work sectio */
 
-.section1 {
+ /* {
   background-color: #000000;
   padding: 60px 0;
   text-align: center;
-}
+} */
 
-.section-detail-wrapper1 {
+.-detail-wrapper1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
@@ -363,26 +364,26 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.section-heading1 {
+.-heading1 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.section-text1 {
+.-text1 {
   font-size: 16px;
   line-height: 1.5;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .section-detail-wrapper1 {
+  .-detail-wrapper1 {
     grid-template-columns: 1fr;
   }
 }
 
 /* skills ko css  */
 
-.skills-section {
+.skills- {
   margin-top: 0px;
   background-color: #000000;
   padding: 40px;
@@ -430,7 +431,7 @@ nav ul li a:hover {
   }
 }
 
-/*for get in touch section */
+/*for get in touch  */
 
 .touch {
   background-color: rgb(22, 23, 23);
@@ -487,7 +488,7 @@ footer p {
   }
 }
 
-/* for the skill section */
+/* for the skill  */
 /* Reset some default browser styles */
 body,
 h1,
@@ -520,12 +521,12 @@ header {
   padding: 10px 0;
 }
 
-/* Section styles */
-section {
+/*  styles */
+ /* {
   padding: 80px 0;
-}
+} */
 
-/* Skills section styles */
+/* Skills  styles */
 .skills-list {
   list-style-type: none;
   padding-left: 20px;
@@ -565,13 +566,13 @@ header {
   padding: 10px 0;
 }
 
-/* Section styles */
-section {
+/*  styles */
+ /* {
   padding: 80px 0;
-}
+} */
 
-/* Skills section styles */
-.skills-section {
+/* Skills  styles */
+.skills- {
   background-color: #000000;
 }
 
@@ -639,13 +640,122 @@ header {
   padding: 10px 0;
 }
 
-/* Section styles */
-section {
+/*  styles */
+ /* {
   padding: 80px 0;
+} */
+button {
+  position: relative;
+  margin: 0;
+  padding: 17px 35px;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: blue;
+  border: 1px solid blac;
+  border-radius: 10px;
+  color: black;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-/* Skills section styles */
-.skills-section {
+button span {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+button:hover {
+  animation: rotate624 0.7s ease-in-out both;
+}
+
+button:hover span {
+  animation: storm1261 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate624 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm1261 {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.btn-shine {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-shine span {
+  z-index: 20;
+}
+
+.btn-shine:after {
+  background: red;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-shine:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* Skills  styles */
+.skills- {
   text-align: center;
   background-color: #222; /* Darker background color */
   padding: 80px 0;
@@ -677,4 +787,66 @@ footer {
   padding: 20px;
   background-color: #333;
   color: #fff;
+}
+#about-container section h2 {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+#about-container {
+  display: flex;
+  justify-content: center;
+}
+
+#about-container section {
+  padding: 2%;
+  width: 50%;
+}
+
+#about-container .section-image { 
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.skills-container .skill {
+  width: 300px;
+}
+
+.skills-section {
+  text-align: center;
+}
+
+#Skills .container {
+  text-align: center;
+}
+.skills-list {
+  margin-top: 20px;
+}
+
+.skills-list li {
+  margin-top: 0.5px;
+}
+
+#contact {
+  text-align: center;
+  background-color: black;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#footer {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 23, 23);
 }
