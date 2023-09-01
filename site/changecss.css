@@ -804,8 +804,10 @@ footer {
 }
 
 #about-container .section-image { 
-  width: 200px;
-  height: fit-content;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .skills-container .skill {
@@ -829,6 +831,7 @@ footer {
 
 #contact {
   text-align: center;
+  background-color: black;
 }
 
 .container-fluid {
@@ -838,4 +841,12 @@ footer {
 
 h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#footer {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 23, 23);
 }
