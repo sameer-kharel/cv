@@ -103,3 +103,14 @@ document.addEventListener("DOMContentLoaded", function () {
       delay += 0.2; // Adjust the delay between animations
   });
 });
+
+
+
+// button
+const hireMeButton = document.getElementById('hireMeButton');
+
+hireMeButton.addEventListener('click', () => {
+  const emailAddress = 'shameerkharel2@gmail.com';
+  const mailtoLink = `mailto:${emailAddress}`;
+  window.location.href = mailtoLink;
+});
